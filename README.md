@@ -1,7 +1,7 @@
-#Integrantes
-David Martinez
-Franco Comas
-Antony Barahona
+# Integrantes
+- David Martinez
+- Franco Comas
+- Antony Barahona
 
 # Instrucciones para Ejecutar el Programa de Análisis Sintáctico
 
@@ -20,39 +20,35 @@ Además, necesitas instalar las bibliotecas `networkx` y `matplotlib`. Puedes ha
 
 `bash`
 pip install networkx matplotlib
-Estructura del Repositorio
+
+## Estructura del Repositorio
+
 Dentro del repositorio, encontrarás los siguientes archivos:
 
-grafo.py: El archivo principal del programa.
-gramatica.txt: Archivo que contiene la gramática que se utilizará para el análisis.
-cadena.txt: Archivo que contiene la cadena de entrada que se analizará.
-Contenido de los Archivos
-1. gramatica.txt
-Asegúrate de que el archivo gramatica.txt contenga el siguiente contenido:
+- `grafo.py`: El archivo principal del programa.
+- `gramatica.txt`: Archivo que contiene la gramática que se utilizará para el análisis.
+- `cadena.txt`: Archivo que contiene la cadena de entrada que se analizará.
 
-plaintext
-Copiar código
-N: E, T, O, N
-T: 2, 3, 4
-S: E
-P:
-E -> E O N | N
-O -> + | -
-N -> 2 | 3 | 4
-2. cadena.txt
-Asegúrate de que el archivo cadena.txt contenga el siguiente contenido:
+## Contenido de los Archivos
 
-plaintext
-Copiar código
+### 1. `gramatica.txt`
+
+Asegúrate de que el archivo `gramatica.txt` contenga el siguiente contenido:
+N: E, T, O, N T: 2, 3, 4 S: E P: E -> E O N | N O -> + | - N -> 2 | 3 | 4
+
+### 2. `cadena.txt`
+
+Asegúrate de que el archivo `cadena.txt` contenga el siguiente contenido:
 2 + 3
-Ejecución del Programa
-Abre una terminal en la carpeta donde se encuentran los archivos grafo.py, gramatica.txt y cadena.txt.
+## Ejecución del Programa
+
+Abre una terminal en la carpeta donde se encuentran los archivos `grafo.py`, `gramatica.txt` y `cadena.txt`.
 
 Ejecuta el programa con el siguiente comando:
 
-bash
-Copiar código
+`bash`
 python3 grafo.py
 El programa leerá los archivos, construirá el árbol de análisis sintáctico y lo mostrará en una ventana emergente.
-Visualización del Árbol
+
+### Visualización del Árbol
 Una vez que el programa se ejecute, se abrirá una ventana que mostrará el árbol de análisis sintáctico correspondiente a la cadena de entrada.
